@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFBEE;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+h1 {
+  font-family: 'Gravitas One';
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: -.6rem;
+}
+
+h2 {
+  font-family: 'Gravitas One';
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: #EBEBDE;
+  letter-spacing: -.6rem;
+  z-index: 1;
+}
+
+h3 {
+  font-family: 'Gravitas One';
+  font-size: 1.2rem;
+  color: #C10023;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+p {
+  font-family: 'Rozha One';
+  font-size: 1.2rem;
+  color: #707070;
+  letter-spacing: .1rem;
+}
+
+img {
+  z-index: 2;
+}
+
+.about-me-text {
+  padding-left: 60px;
+}
+
+.first-text-box  {
+  z-index: 3;
+}
+
+.about-me {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wave-picture {
+  position: relative;
+  top: -35px;
+}
+
+.full-width-image {
+  float: left;
+  position: relative;
+  top: -35px;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+  .about-me {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  .first-text-box-border {
+    border: 1px solid grey;
+    height: 400px;
+    position: relative;
+    top: -100px;
+  }
+
+  .second-text-box-border {
+    border: 1px solid grey;
+    height: 400px;
+    position: relative;
+    top: 400px;
+  }
+
+
+  .first-text-box-copy {
+    position: relative;
+    top: -400px;
+
+  }
+
+  .moon-picture {
+    position: absolute;
+    top: 900px;
+    z-index: 2;
+  }
+
+  .more-stories {
+    margin-top: 60px;
+  }
+
+}
+
