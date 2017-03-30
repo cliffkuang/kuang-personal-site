@@ -5,49 +5,57 @@
 body {
   background-color: #FAFBEE;
 }
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
   overflow: auto;
 }
 
+nav {
+  height: 38px;
+  background-color: black;
+}
+
 h1 {
   font-family: 'Gravitas One';
-  font-size: 7rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: -.6rem;
 }
 
 h2 {
   font-family: 'Gravitas One';
-  font-size: 7rem;
   text-transform: uppercase;
   color: #EBEBDE;
-  letter-spacing: -.6rem;
+  font-size: 3rem;
   z-index: 1;
+  text-align: center;
+}
+
+hr {
+  margin: 0;
+  color: grey;
 }
 
 h3 {
   font-family: 'Gravitas One';
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #C10023;
   text-transform: uppercase;
-  margin-top: 60px;
+}
+
+.about-me-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 p {
   font-family: 'Rozha One';
-  font-size: 1.2rem;
+  font-size: .95rem;
   color: #707070;
-  letter-spacing: .1rem;
-}
-
-img {
-  z-index: 2;
-}
-
-.about-me-text {
-  padding-left: 60px;
+  letter-spacing: .11rem;
+  padding-bottom: 60px;
+  line-height: 1.3rem;
 }
 
 .first-text-box  {
@@ -60,22 +68,91 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
+
+img {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
 
 .wave-picture {
   position: relative;
-  top: -35px;
+  top: -12px;
 }
 
 .full-width-image {
-  float: left;
   position: relative;
-  top: -35px;
+  top: -12px;
+}
+
+.moon-picture {
+  max-width: 55%;
+  position: absolute;
+  left: -80px;
+  top: 820px;
+  opacity: 60%;
+}
+
+.about-the-book {
+  margin-top: 60px;
+}
+
+.more-stories {
+  margin-top: 120px;
+}
+
+.first-text-box-border {
+  border: 1px solid grey;
+  height: 400px;
+  position: absolute;
+  top: 600px;
+  max-width: 80%;
+  margin-left: 23px;
+}
+
+.second-text-box-border {
+  border: 1px solid grey;
+  height: 300px;
+  position: absolute;
+  top: 1240px;
+  max-width: 80%;
+  margin-left: 23px;
 }
 
 
 
 @media only screen and (min-width: 992px) {
+
+  h1 {
+    font-size: 7rem;
+    letter-spacing: -.6rem;
+  }
+
+  h2 {
+    letter-spacing: -.6rem;
+    font-size: 7rem;
+    text-align: left;
+  }
+
+  h3 {
+  font-family: 'Gravitas One';
+  font-size: 1.2rem;
+  margin-top: 60px;
+  }
+
+  p {
+  font-family: 'Rozha One';
+  font-size: 1.2rem;
+  color: #707070;
+  letter-spacing: .1rem;
+  }
+
+  .about-me-text {
+    padding-left: 60px;
+  }
+
 
   .about-me {
     padding-top: 80px;
@@ -85,11 +162,20 @@ img {
     justify-content: left;
   }
 
+  .wave-picture {
+    position: relative;
+    top: -35px;
+  }
+
   .first-text-box-border {
     border: 1px solid grey;
     height: 400px;
     position: relative;
     top: -100px;
+  }
+
+  .moon-picture {
+    max-width: 100%;
   }
 
   .second-text-box-border {
