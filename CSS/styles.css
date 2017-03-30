@@ -89,10 +89,9 @@ img {
 
 .moon-picture {
   max-width: 55%;
-  position: absolute;
+  position: relative;
   left: -80px;
-  top: 820px;
-  opacity: 60%;
+  top: -80px;
 }
 
 .about-the-book {
@@ -100,7 +99,8 @@ img {
 }
 
 .more-stories {
-  margin-top: 120px;
+  margin-top: -60px;
+  margin-bottom: 40px;
 }
 
 .first-text-box-border {
@@ -116,7 +116,7 @@ img {
   border: 1px solid grey;
   height: 300px;
   position: absolute;
-  top: 1240px;
+  top: 1300px;
   max-width: 80%;
   margin-left: 23px;
 }
@@ -150,7 +150,8 @@ img {
   }
 
   .about-me-text {
-    padding-left: 60px;
+    padding: 0px 0px 0px 60px;
+    margin: 0;
   }
 
 
@@ -160,6 +161,7 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: left;
+    text-align: left;
   }
 
   .wave-picture {
@@ -167,40 +169,47 @@ img {
     top: -35px;
   }
 
-  .first-text-box-border {
+    .first-text-box-copy {
+   /* position: relative;
+    top: 100px;*/
+
+  }
+
+   .first-text-box-border {
     border: 1px solid grey;
-    height: 400px;
-    position: relative;
-    top: -100px;
+    height: 425px;
+    position: absolute;
+    top: 925px;/*
+    max-width: 100%;*//*
+    margin-left: none;*/
   }
 
   .moon-picture {
-    max-width: 100%;
+
+    position: relative;
+    top: -400px;
+    left: 0px;
+  }
+
+  .more-stories {
+  margin-top: -350px;
+  margin-bottom: 40px;
   }
 
   .second-text-box-border {
     border: 1px solid grey;
-    height: 400px;
-    position: relative;
-    top: 400px;
-  }
-
-
-  .first-text-box-copy {
-    position: relative;
-    top: -400px;
-
-  }
-
-  .moon-picture {
+    height: 300px;
     position: absolute;
-    top: 900px;
-    z-index: 2;
+    top: 1950px;
+    max-width: 80%;
+    margin-left: 23px;
   }
 
-  .more-stories {
-    margin-top: 60px;
+  .full-width-image {
+  position: relative;
+  top: -35px;
   }
+
 
 }
 
