@@ -6,15 +6,18 @@ body {
   background-color: #FAFBEE;
 }
 
-.container {
+.wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  overflow: auto;
+}
+
+header {  
+  background-color: black;
 }
 
 nav {
-  height: 38px;
-  background-color: black;
+  min-height: 38px;
+  color: white;
 }
 
 h1 {
@@ -73,8 +76,6 @@ p {
 
 img {
     width: 100%;
-    height: auto;
-    z-index: 2;
   }
 
 .wave-picture {
@@ -88,10 +89,9 @@ img {
 }
 
 .moon-picture {
-  max-width: 55%;
   position: relative;
   left: -80px;
-  top: -80px;
+  width: 60%;
 }
 
 .about-the-book {
@@ -109,7 +109,6 @@ img {
   position: absolute;
   top: 600px;
   max-width: 80%;
-  margin-left: 23px;
 }
 
 .second-text-box-border {
@@ -169,12 +168,6 @@ img {
     top: -35px;
   }
 
-    .first-text-box-copy {
-   /* position: relative;
-    top: 100px;*/
-
-  }
-
    .first-text-box-border {
     border: 1px solid grey;
     height: 425px;
@@ -187,7 +180,6 @@ img {
   .moon-picture {
 
     position: relative;
-    top: -400px;
     left: 0px;
   }
 
