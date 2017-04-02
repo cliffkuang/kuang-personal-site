@@ -59,7 +59,7 @@ h3 {
   flex-wrap: wrap;
   text-align: center;
 }
-.about-me-text {
+.about-me__text {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -111,6 +111,43 @@ img {
   z-index: -1;
 }
 
+@media only screen and (min-width: 768px) {
+
+  h1 {
+    font-size: 7rem;
+    letter-spacing: -.6rem;
+  }  
+
+  h2 {
+    font-size: 7rem;
+    letter-spacing: -.6rem;
+  }
+
+  p {
+    font-family: 'Rozha One';
+    font-size: 1.2rem;
+    color: #707070;
+    letter-spacing: .1rem;
+  }
+
+
+  p {
+    font-family: 'Rozha One';
+    font-size: 1.2rem;
+    color: #707070;
+    letter-spacing: .1rem;
+  }
+
+  .moon-picture {
+    position: absolute;
+    top: 900px;
+    opacity: .85;
+    z-index: -1;
+  }
+
+}
+
+
 
 @media only screen and (min-width: 992px) {
 
@@ -125,17 +162,11 @@ img {
     text-align: left;
   }
 
-  h3 {
-  font-family: 'Gravitas One';
-  font-size: 1.2rem;
-  margin-top: 0px;
-  }
-
   p {
-  font-family: 'Rozha One';
-  font-size: 1.2rem;
-  color: #707070;
-  letter-spacing: .1rem;
+    font-family: 'Rozha One';
+    font-size: 1.2rem;
+    color: #707070;
+    letter-spacing: .1rem;
   }
 
   
@@ -143,41 +174,46 @@ img {
     padding-top: 80px;
     padding-bottom: 60px;
     display: flex;
-    align-items: flex-start;
-    justify-content: left;
+    justify-content: flex-start;
     text-align: left;
   }
 
   .about-me__text {
-    margin-left: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 60px;
   }
 
   .post__image {
-  margin-top: -35px;
-  padding: 0;
+    margin-top: -35px;
+    padding: 0;
   }
 
   .post__text-box {
-  position: relative;
-  border: 1px solid grey;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: -80px;
-  margin-bottom: 60px;
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 60px;
-  /*  z-index: 2;*/
+    position: relative;
+    border: 1px solid grey;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -80px;
+    margin-bottom: 60px;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 60px;
   }
  
 
   .moon-picture {
-  position: absolute;
-  left: 60px;
-  top: 1100px;
-  opacity: .85;
-  z-index: -1;
+    position: absolute;
+    left: 60px;
+    top: 1000px;
+    opacity: .85;
+    z-index: -1;
+  }
+
+  .second-post--md {
+    margin-top: 100px;
+  }
 }
 
 
