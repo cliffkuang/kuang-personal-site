@@ -38,8 +38,8 @@ h1 {
 h2 {
   font-family: 'Gravitas One';
   text-transform: uppercase;
-  color: #EBEBDE;
-  font-size: 3rem;
+  color: #CEE8FF;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -52,7 +52,7 @@ hr {
 h3 {
   font-family: 'Gravitas One';
   font-size: 1.1rem;
-  color: #C10023;
+  color: #0087FF;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -91,7 +91,7 @@ img {
 }
 
 .post__image {
-  margin-top: -15px;
+  margin-top: -10px;
   padding: 0;
 }
 
@@ -109,7 +109,7 @@ img {
 }
 
 .post_text-box--fade-in {
-  transition: all 800ms ease-in;
+  transition: all 650ms ease-in;
   opacity: 1;
 }
 
@@ -129,6 +129,7 @@ img {
   h1 {
     font-size: 7rem;
     letter-spacing: -.6rem;
+    margin-top: -7px;
   }  
 
   h2 {
@@ -205,7 +206,7 @@ img {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-left: 10%;
-    width: 50%;
+    max-width: 50%;
   }
 
   .post__image {
