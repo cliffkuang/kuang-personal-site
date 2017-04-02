@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -17,7 +17,10 @@ header {
 
 nav {
   min-height: 38px;
-  color: white;
+}
+
+footer {
+  background-color: black;
 }
 
 h1 {
@@ -31,13 +34,13 @@ h2 {
   text-transform: uppercase;
   color: #EBEBDE;
   font-size: 3rem;
-  z-index: 1;
   text-align: center;
 }
 
 hr {
-  margin: 0;
+  margin: 0px, 0px,0px, 5%;
   color: grey;
+  max-width: 90%;
 }
 
 h3 {
@@ -45,24 +48,7 @@ h3 {
   font-size: 1.1rem;
   color: #C10023;
   text-transform: uppercase;
-}
-
-.about-me-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-p {
-  font-family: 'Rozha One';
-  font-size: .95rem;
-  color: #707070;
-  letter-spacing: .11rem;
-  padding-bottom: 60px;
-  line-height: 1.3rem;
-}
-
-.first-text-box  {
-  z-index: 3;
+  margin-bottom: 20px;
 }
 
 .about-me {
@@ -73,53 +59,57 @@ p {
   flex-wrap: wrap;
   text-align: center;
 }
+.about-me-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: 'Rozha One';
+  font-size: .95rem;
+  color: #707070;
+  letter-spacing: .11rem;
+  padding-bottom: 40px;
+  line-height: 1.3rem;
+}
 
 img {
     width: 100%;
   }
 
-.wave-picture {
+.post {
   position: relative;
-  top: -12px;
-}
-
-.full-width-image {
-  position: relative;
-  top: -12px;
-}
-
-.moon-picture {
-  position: relative;
-  left: -80px;
-  width: 60%;
-}
-
-.about-the-book {
   margin-top: 60px;
 }
 
-.more-stories {
-  margin-top: -60px;
-  margin-bottom: 40px;
+.post__image {
+  margin-top: -15px;
+  padding: 0;
 }
 
-.first-text-box-border {
+.post__text-box {
+  position: relative;
   border: 1px solid grey;
-  height: 400px;
-  position: absolute;
-  top: 600px;
-  max-width: 80%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -30px;
+  margin-bottom: 60px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+/*  z-index: 2;*/
 }
 
-.second-text-box-border {
-  border: 1px solid grey;
-  height: 300px;
-  position: absolute;
-  top: 1300px;
-  max-width: 80%;
-  margin-left: 23px;
-}
 
+.moon-picture {
+  width: 50%;
+  max-width: 325px;
+  position: absolute;
+  left: -60px;
+  top: 800px;
+  opacity: .7;
+  z-index: -1;
+}
 
 
 @media only screen and (min-width: 992px) {
@@ -138,7 +128,7 @@ img {
   h3 {
   font-family: 'Gravitas One';
   font-size: 1.2rem;
-  margin-top: 60px;
+  margin-top: 0px;
   }
 
   p {
@@ -148,12 +138,7 @@ img {
   letter-spacing: .1rem;
   }
 
-  .about-me-text {
-    padding: 0px 0px 0px 60px;
-    margin: 0;
-  }
-
-
+  
   .about-me {
     padding-top: 80px;
     padding-bottom: 60px;
@@ -163,44 +148,37 @@ img {
     text-align: left;
   }
 
-  .wave-picture {
-    position: relative;
-    top: -35px;
+  .about-me__text {
+    margin-left: 40px;
   }
 
-   .first-text-box-border {
-    border: 1px solid grey;
-    height: 425px;
-    position: absolute;
-    top: 925px;/*
-    max-width: 100%;*//*
-    margin-left: none;*/
+  .post__image {
+  margin-top: -35px;
+  padding: 0;
   }
+
+  .post__text-box {
+  position: relative;
+  border: 1px solid grey;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: -80px;
+  margin-bottom: 60px;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  /*  z-index: 2;*/
+  }
+ 
 
   .moon-picture {
-
-    position: relative;
-    left: 0px;
-  }
-
-  .more-stories {
-  margin-top: -350px;
-  margin-bottom: 40px;
-  }
-
-  .second-text-box-border {
-    border: 1px solid grey;
-    height: 300px;
-    position: absolute;
-    top: 1950px;
-    max-width: 80%;
-    margin-left: 23px;
-  }
-
-  .full-width-image {
-  position: relative;
-  top: -35px;
-  }
+  position: absolute;
+  left: 60px;
+  top: 1100px;
+  opacity: .85;
+  z-index: -1;
+}
 
 
 }
