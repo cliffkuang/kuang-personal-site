@@ -13,6 +13,11 @@ body {
 
 header {  
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.7);
 }
 
 nav {
@@ -21,6 +26,7 @@ nav {
 
 footer {
   background-color: black;
+  min-height: 38px;
 }
 
 h1 {
@@ -52,6 +58,7 @@ h3 {
 }
 
 .about-me {
+  margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 20px;
   display: flex;
@@ -59,6 +66,7 @@ h3 {
   flex-wrap: wrap;
   text-align: center;
 }
+
 .about-me__text {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -97,7 +105,12 @@ img {
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
-/*  z-index: 2;*/
+  opacity: 0;
+}
+
+.post_text-box--fade-in {
+  transition: all 800ms ease-in;
+  opacity: 1;
 }
 
 
@@ -121,6 +134,7 @@ img {
   h2 {
     font-size: 7rem;
     letter-spacing: -.6rem;
+    text-align: center;
   }
 
   p {
@@ -136,20 +150,29 @@ img {
     font-size: 1.2rem;
     color: #707070;
     letter-spacing: .1rem;
+  }
+
+  .post__image {
+    margin-top: -35px;
+    padding: 0;
   }
 
   .moon-picture {
     position: absolute;
     top: 900px;
-    opacity: .85;
+    left: -100px;
     z-index: -1;
+  }
+
+  .second-post--sm-md {
+  margin-top: 150px;
   }
 
 }
 
 
 
-@media only screen and (min-width: 992px;) {
+@media only screen and (min-width: 992px) {
 
   h1 {
     font-size: 7rem;
@@ -181,7 +204,8 @@ img {
   .about-me__text {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-left: 60px;
+    margin-left: 10%;
+    width: 50%;
   }
 
   .post__image {
@@ -205,17 +229,14 @@ img {
 
   .moon-picture {
     position: absolute;
-    left: 60px;
+    left: 30px;
     top: 1000px;
-    opacity: .85;
     z-index: -1;
   }
 
-  .second-post--md {
+  .second-post--sm-md {
     margin-top: 100px;
   }
 }
 
-
-}
 
