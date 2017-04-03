@@ -37,23 +37,25 @@ h1 {
 }
 
 h2 {
-  color: #EAEADE;
-  font-family: 'Gravitas One';
+  color: #B5B5A6;
+  font-family: 'Kumar One';
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 hr {
-  margin: 0px, 0px,0px, 5%;
-  color: grey;
-  max-width: 90%;
+  margin: 0px, 5%, 0px, 5%;
+  background-color: #555353;
+  height: 1px;
+  border: 0; 
+  max-width: 90%
 }
 
 h3 {
   font-family: 'Gravitas One';
   font-size: 1.1rem;
-  color: #0087FF;
+  color: #2B77BC;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -74,10 +76,10 @@ h3 {
 }
 
 p {
-  font-family: 'Rozha One';
-  font-size: .95rem;
-  color: #707070;
-  letter-spacing: .11rem;
+  font-family: 'Petrona';
+  font-size: 1rem;
+  color: #696868;
+  letter-spacing: .07rem;
   padding-bottom: 40px;
   line-height: 1.3rem;
 }
@@ -86,28 +88,40 @@ img {
     width: 100%;
   }
 
+.post__image--border {
+  border-top: 15px solid #B5B5A6;
+}
+
+
 .post {
   position: relative;
   margin-top: 60px;
 }
 
 .post__image {
-  margin-top: -10px;
+  margin-top: -12px;
   padding: 0;
 }
 
 .post__text-box {
-  border: 1px solid grey;
+  background-color: #F9F9F4;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.04);
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: -30px;
-  opacity: 0;
+  opacity: .0;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
   position: relative;
-}
+  border-style: solid;
+/*  border-width: 0 5px 5px 0;
+-moz-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
+-webkit-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
+-o-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
+border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
+*/}
 
 .post_text-box--fade-in {
   opacity: 1;
@@ -134,27 +148,18 @@ img {
   }  
 
   h2 {
-    font-size: 7rem;
-    letter-spacing: -.6rem;
+    font-size: 5rem;
+    letter-spacing: -.2rem;
     text-align: center;
   }
 
   p {
-    font-family: 'Rozha One';
     font-size: 1.2rem;
-    color: #707070;
-    letter-spacing: .1rem;
-  }
-
-  p {
-    font-family: 'Rozha One';
-    font-size: 1.2rem;
-    color: #707070;
     letter-spacing: .1rem;
   }
 
   .post__image {
-    margin-top: -35px;
+    margin-top: -23px;
     padding: 0;
   }
 
@@ -181,16 +186,14 @@ img {
   }
 
   h2 {
-    letter-spacing: -.6rem;
+    letter-spacing: -.1rem;
     font-size: 5.5rem;
     text-align: left;
   }
 
   p {
-    font-family: 'Rozha One';
-    font-size: 1.2rem;
-    color: #707070;
-    letter-spacing: .1rem;
+    font-size: 1.3rem;
+    letter-spacing: .15rem;
   }
 
   
@@ -216,16 +219,16 @@ img {
   }
 
   .post__text-box {
-    position: relative;
-    border: 1px solid grey;
     margin-left: 80px;
     margin-right: 80px;
-    margin-top: -80px;
+    margin-top: -20px;
     margin-bottom: 100px;
-    padding-top: 100px;
+    max-width: 672px;
+    padding-top: 40px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
+
   }
  
   .moon-picture {
@@ -233,6 +236,7 @@ img {
     left: 30px;
     top: 1000px;
     z-index: -1;
+    opacity: 1;
   }
 
   .second-post--sm-md {
