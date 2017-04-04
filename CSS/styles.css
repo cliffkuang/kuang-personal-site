@@ -4,10 +4,12 @@
 
 body {
   background-color: #F9F9F4;
+  background-image: -webkit-linear-gradient(top, #F9F9F4 30%, #E6E6E2 30%, #F9F9F4);
 }
 
+
 .wrapper {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -104,8 +106,8 @@ img {
 }
 
 .post__text-box {
-  background-color: #F9F9F4;
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.04);
+  background-color: #F9F9F4;/*
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.04);*/
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
@@ -114,14 +116,12 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
+  padding-bottom: 10px;
   position: relative;
-  border-style: solid;
-/*  border-width: 0 5px 5px 0;
--moz-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
--webkit-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
--o-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
-border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
-*/}
+  border: 10px solid transparent;
+  -webkit-border-image: url(../images/tile-10px.png) 10 10 repeat;
+  border-image-outset: 1;
+}
 
 .post_text-box--fade-in {
   opacity: 1;
@@ -130,14 +130,15 @@ border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
 
 
 .moon-picture {
-  width: 50%;
-  max-width: 325px;
-  position: absolute;
   left: -60px;
-  top: 800px;
+  max-width: 325px;
   opacity: .7;
+  position: absolute;
+  top: 800px;
+  width: 50%;
   z-index: -1;
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -164,9 +165,9 @@ border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
   }
 
   .moon-picture {
+    left: -100px;
     position: absolute;
     top: 900px;
-    left: -100px;
     z-index: -1;
   }
 
@@ -175,7 +176,6 @@ border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
   }
 
 }
-
 
 
 @media only screen and (min-width: 992px) {
@@ -240,7 +240,7 @@ border-image: url(../images/Rectangle-4.png) 0 5 5 0 repeat;
   }
 
   .second-post--sm-md {
-    margin-top: 100px;
+    margin-top: 140px;
   }
 
 }
