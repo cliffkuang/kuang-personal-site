@@ -4,7 +4,7 @@
 
 body {
   background-color: #F9F9F4;
-  background-image: -webkit-linear-gradient(top, #F9F9F4 30%, #E6E6E2 30%, #F9F9F4);
+  /*background-image: -webkit-linear-gradient(top, #F9F9F4 400px, #E6E6E2 401px, #E6E6E2 800px, #F9F9F4 801px);*/
 }
 
 
@@ -119,7 +119,7 @@ img {
   padding-bottom: 10px;
   position: relative;
   border: 10px solid transparent;
-  -webkit-border-image: url(../images/tile-10px.png) 10 10 repeat;
+  -webkit-border-image: url(../images/tile-10px.png) 10 round;
   border-image-outset: 1;
 }
 
@@ -129,14 +129,22 @@ img {
 }
 
 
-.moon-picture {
-  left: -60px;
-  max-width: 325px;
+.moon-picture {/*
+  left: -60px;*/
   opacity: .7;
   position: absolute;
   top: 800px;
   width: 50%;
   z-index: -1;
+  background-color: grey;
+  height: 500px;
+  width: 100%;
+}
+
+.moon-img-wrapper {
+  left: -60px;
+  max-width: 325px;
+  position: absolute;
 }
 
 
@@ -164,9 +172,9 @@ img {
     padding: 0;
   }
 
-  .moon-picture {
-    left: -100px;
-    position: absolute;
+  .moon-picture {/*
+    left: -100px;*//*
+    position: absolute;*/
     top: 900px;
     z-index: -1;
   }
@@ -232,8 +240,8 @@ img {
   }
  
   .moon-picture {
-    position: absolute;
-    left: 30px;
+    position: absolute;/*
+    left: 30px;*/
     top: 1000px;
     z-index: -1;
     opacity: 1;
