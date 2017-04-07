@@ -5,7 +5,7 @@ $(function() {
         $('#first-text-fade-in').addClass('post_text-box--fade-in');
 
     }, {
-        offset: '10%'
+        offset: '40%'
 
     });
 
@@ -14,7 +14,7 @@ $(function() {
         $('#second-text-fade-in').addClass('post_text-box--fade-in');
 
     }, {
-        offset: '10%'
+        offset: '40%'
 
     });
 
