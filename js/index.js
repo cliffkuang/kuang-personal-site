@@ -18,11 +18,11 @@ $(function() {
 
     });
 
-    // $('.single-item').slick({
-    //     dots: true,
-    //     speed: 500,
-    //     fade: true,
-    // });
+    $('.single-item').slick({
+        infinite: true,
+        speed: 800,
+        fade: true,
+    });
 
 
 });
